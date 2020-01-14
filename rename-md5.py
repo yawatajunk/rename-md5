@@ -27,7 +27,7 @@ def rename(filepath):
 if __name__ == '__main__':
     import argparse as ap
 
-    parser = ap.ArgumentParser(description='Rename a file with its MD5 hash')
+    parser = ap.ArgumentParser(prog='rename-md5', description='Rename a file with its MD5 hash')
     parser.add_argument('filename', type=str, help='file name to be renamed')
     args = parser.parse_args()
     res = rename(args.filename)
